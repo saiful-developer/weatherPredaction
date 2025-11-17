@@ -3,6 +3,14 @@
 </mat-toolbar>
 
 <mat-nav-list class="sidebar-nav">
+
+  <!-- Weather Stations -->
+  <a mat-list-item routerLink="/home" routerLinkActive="active-link" class="nav-item">
+    <mat-icon matListIcon>home</mat-icon>
+    <span class="nav-text">Home</span>
+  </a>
+
+
   <!-- Weather Stations -->
   <a mat-list-item routerLink="/weather-stations" routerLinkActive="active-link" class="nav-item">
     <mat-icon matListIcon>cloud</mat-icon>
@@ -10,11 +18,8 @@
   </a>
 
   <!-- Previous Years Data Analysis -->
-  <mat-expansion-panel 
-    [expanded]="expanded === 'previous'" 
-    (opened)="setExpanded('previous')" 
-    (closed)="setExpanded(null)"
-    class="expansion-panel">
+  <mat-expansion-panel [expanded]="expanded === 'previous'" (opened)="setExpanded('previous')"
+    (closed)="setExpanded(null)" class="expansion-panel">
     <mat-expansion-panel-header class="panel-header">
       <mat-panel-title>
         <mat-icon matListIcon>timeline</mat-icon>
@@ -46,11 +51,8 @@
   </mat-expansion-panel>
 
   <!-- Model Run -->
-  <mat-expansion-panel 
-    [expanded]="expanded === 'modelRun'" 
-    (opened)="setExpanded('modelRun')" 
-    (closed)="setExpanded(null)"
-    class="expansion-panel">
+  <mat-expansion-panel [expanded]="expanded === 'modelRun'" (opened)="setExpanded('modelRun')"
+    (closed)="setExpanded(null)" class="expansion-panel">
     <mat-expansion-panel-header class="panel-header">
       <mat-panel-title>
         <mat-icon matListIcon>model_training</mat-icon>
@@ -75,7 +77,7 @@
   </mat-expansion-panel>
 
   <!-- Best Fit Model -->
-  <a mat-list-item routerLink="/best-fit-model" routerLinkActive="active-link" class="nav-item" >
+  <a mat-list-item routerLink="/best-fit-model" routerLinkActive="active-link" class="nav-item">
     <mat-icon matListIcon>star</mat-icon>
     <span class="nav-text">Best Fit Model</span>
   </a>

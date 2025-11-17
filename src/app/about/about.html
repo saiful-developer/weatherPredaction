@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <span>About WeatherPredaction</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/home">Home</button>
+  <button mat-button routerLink="/weather-stations">Weather Stations</button>
+</mat-toolbar>
+
+<section class="about-hero">
+  <h1>About WeatherPredaction</h1>
+  <p>
+    WeatherPredaction is a modern analytics platform for weather data. Explore trends, compare stations, detect extreme events, 
+    and run machine learning models to predict weather patterns accurately.
+  </p>
+</section>
+
+<section class="team-section">
+  <h2>Meet the Team</h2>
+  <div class="team-grid">
+    <mat-card class="team-card" *ngFor="let member of team">
+      <mat-icon>{{ member.icon }}</mat-icon>
+      <h3>{{ member.name }}</h3>
+      <h4>{{ member.role }}</h4>
+      <p>{{ member.description }}</p>
+    </mat-card>
+  </div>
+</section>

@@ -9,9 +9,13 @@ import { SvmModel } from './components/svm-model/svm-model';
 import { RandomForest } from './components/random-forest/random-forest';
 import { Total7Model } from './components/total-7-model/total-7-model';
 import { BestFitModel } from './components/best-fit-model/best-fit-model';
+import { Home } from './home/home';
+import { About } from './about/about';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/weather-stations', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: Home },
+  { path: 'about', component: About },
   { path: 'weather-stations', component: WeatherStationsComponent, data: { Title: 'Weather Stations' } },
   { path: 'temporal-trend-analysis', component: TemporalTrand, data: { Title: 'Temporal Trend Analysis' } },
   { path: "station-comparison", component: StationWiseComparison, data: { Title: 'Station Wise Comparison' } },

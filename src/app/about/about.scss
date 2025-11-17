@@ -1,0 +1,75 @@
+:host {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+
+    .mat-toolbar {
+        display: flex;
+        justify-content: space-between;
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+    }
+
+    .about-hero {
+        padding: 4rem 2rem;
+        text-align: center;
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #1976d2;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+    }
+
+    .team-section {
+        padding: 4rem 2rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1976d2;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+
+            .team-card {
+                padding: 1.5rem;
+                text-align: center;
+
+                mat-icon {
+                    height: auto;
+                    width: auto;
+                    font-size: 3rem;
+                    color: #1976d2;
+                }
+
+                h3 {
+                    margin: 1rem 0 0.5rem 0;
+                }
+
+                h4 {
+                    margin-bottom: 1rem;
+                    font-weight: normal;
+                    color: #666;
+                }
+
+                p {
+                    font-size: 0.95rem;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
